@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="tools/jquery1.42.min.js"></script>
+    <script src="tools/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="header-top">
+        <div class="header-top-cen">
+            <div class="welcome">
+                <span>您好！欢迎来到 &nbsp;</span>
+            </div>
+
+            <div class="login-reg">
+                <a href="#" class="login">【 登录 】</a>
+                <a href="#" class="register">【 注册 】</a>
+                <a href="#" class="callus">联系我们</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-input">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="province">
+            <h2> 江西省大型科研仪器网络管理平台</h2>
+        </div>
+        <div class="search">
+            <div class="search-top">
+                <select name="select" id="select">
+                    <option>全部</option>
+                    <option>全部全</option>
+                    <option>全部全</option>
+                </select>
+                <input type="text" placeholder="请输入您要搜索的关键字">
+                <button id="search-btn">搜 索</button>
+            </div>
+            <div class="hotkeywords">
+                <span>热门关键词：</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="all">全部仪器分类</div>
+        <a href="#" id="firstpage">首页</a>
+        <a href="#">平台简介</a>
+        <a href="#">入网仪器</a>
+        <a href="#">入网单位</a>
+        <a href="#">政策法规</a>
+        <a href="#" id="download">文件下载</a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="content-top">
+
+        <div class="menus">
+            <div class="menu">
+                <div class="menu-left">
+                    <ul>
+                        <li class="menu-li"><a href="#">仪器所属大类 </a></li>
+                        <li class="menu-right menu-right1">
+                            <a href="#">科学仪器中心</a>
+                            <a href="#">大型科学装置</a>
+                            <a href="#">科学仪器服务单元</a>
+                            <a href="#">单台套科学仪器设备</a>
+                        </li>
+                    </ul>
+                    <div class="menu-left-bot">
+                        <a href="#">大型科学装置</a>
+                        <a href="#">单台套科学仪器</a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-left">
+                    <ul>
+                        <li class="menu-li"><a href="#">仪器所属小类 </a></li>
+                        <li class="menu-right menu-right2">
+                            <a href="#">分析仪器</a>
+                            <a href="#">物理性能测试仪器</a>
+                            <a href="#">计量仪器</a>
+                            <a href="#">电子测量仪器</a>
+                            <a href="#">海洋仪器</a>
+                            <a href="#">地球探测仪器</a>
+                            <a href="#">大气探测仪器</a>
+                            <a href="#">特种检测仪器</a>
+                            <a href="#">激光器</a>
+                            <a href="#">工艺试验仪器</a>
+                            <a href="#">计算机及其配套设备</a>
+                            <a href="#">天文仪器</a>
+                            <a href="#">科学研究仪器</a>
+                            <a href="#">核仪器</a>
+                            <a href="#">其他仪器</a>
+                        </li>
+                    </ul>
+                    <div class="menu-left-bot menu-left-bot2">
+                        <a href="#">分析仪器</a>
+                        <a href="#">计量仪器</a>
+                        <a href="#">电子测试仪器</a>
+                        <a href="#">海洋仪器</a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-left">
+                    <ul>
+                        <li class="menu-li"><a href="#">所属科学领域 </a></li>
+                        <li class="menu-right menu-right3">
+                            <a href="#">数学</a>
+                            <a href="#">信息科学与统计科学</a>
+                            <a href="#">力学</a>
+                            <a href="#">物理学</a>
+                            <a href="#">化学</a>
+                            <a href="#">天文学</a>
+                            <a href="#">地球科学</a>
+                            <a href="#">生物学</a>
+                            <a href="#">心里学</a>
+                            <a href="#">农学</a>
+                            <a href="#">林学</a>
+                            <a href="#">畜牧、兽医科学</a>
+                            <a href="#">水产学</a>
+                            <a href="#">基础医学</a>
+                            <a href="#">临床医学</a>
+                            <a href="#">预防医学与公共卫生学</a>
+                            <a href="#">军事医学与特种医学学</a>
+                            <a href="#">药学</a>
+
+                        </li>
+                    </ul>
+                    <div class="menu-left-bot menu-left-bot2">
+                        <a href="#">地球科学</a>
+                        <a href="#">信息技术</a>
+                        <a href="#">材料科学</a>
+                        <a href="#">机械制造</a>
+                        <a href="#">化学工程</a>
+                        <a href="#">物理学</a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-left">
+                    <ul>
+                        <li class="menu-li"><a href="#">仪器所属地区 </a></li>
+                        <li class="menu-right menu-right4">
+
+                        </li>
+                    </ul>
+                    <div class="menu-left-bot menu-left-bot2">
+                        <a href="#">北京市</a>
+                        <a href="#">上海市</a>
+                        <a href="#">山东省</a>
+                        <a href="#">广西省</a>
+                        <a href="#">湖北省</a>
+                        <a href="#">黑龙江省</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="banner" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
+                </ul>
+            </div>
+
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+
+        <div class="announcement">
+            <div class="announcement-nav">
+                <div class="announcement-nav-d bg-img">通知公告</div>
+                <div class="announcement-nav-d">工作动态</div>
+                <div class="announcement-nav-d">行业新闻</div>
+            </div>
+            <div class="announcement-content">
+                <div class="annou-con-d visible">
+                    <ul class="news-list">
+                        <li><a href="#">1新闻新闻信息新闻新闻信息新</a></li>
+                        <li><a href="#">1新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信息新闻新信息新闻新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信息新闻信息</a></li>
+                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
+                    </ul>
+                    <a href="#" class="news-more">更多 >></a>
+                </div>
+                <div class="annou-con-d">
+                    <ul class="news-list">
+                        <li><a href="#">2新闻新闻信息新闻新闻信息新</a></li>
+                        <li><a href="#">2新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">2新闻新闻信新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">2新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">2新闻新闻信息新闻信息</a></li>
+                        <li><a href="#">2新闻新闻信息新闻新闻信息</a></li>
+                    </ul>
+                    <a href="#" class="news-more">更多 >></a>
+                </div>
+                <div class="annou-con-d">
+                    <ul class="news-list">
+                        <li><a href="#">3新闻新闻信息新闻新闻信息新</a></li>
+                        <li><a href="#">3新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">3新闻新闻信新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">3新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">3新闻新闻信息新闻新信息新闻新闻信息</a></li>
+                        <li><a href="#">3新闻新闻信息新闻新闻信息</a></li>
+                        <li><a href="#">3新闻新闻信息新闻信息</a></li>
+                    </ul>
+                    <a href="#" class="news-more">更多 >></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="all-information">
+        <div class="info-con">
+            <img src="images/net-instrument%20.png" alt="">
+            <h4><span>3216</span> 台（套）</h4>
+            <p>入网仪器</p>
+        </div>
+        <div class="info-con">
+            <img src="images/net_03.jpg" alt="">
+            <h4><span>888</span> 台（套）</h4>
+            <p>20万以上仪器数量</p>
+        </div>
+        <div class="info-con">
+            <img src="images/2.png" alt="">
+            <h4><span>818</span> 家</h4>
+            <p>入网单位</p>
+        </div>
+        <div class="info-con last-info-con">
+            <img src="images/net-all.png" alt="">
+            <h4><span>32183</span> 万元</h4>
+            <p>仪器总值</p>
+        </div>
+
+        <div class="new-info">
+            <p>最新入网单位 &nbsp;<span>66</span> 家</p>
+            <div>最新入网仪器 &nbsp;<span>88</span> 台（套）</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="network-container">
+    <div class="net-con-left">
+        <div class="instrument">
+            <div class="instrument-nav">
+                <div class="ins-nav-tit">
+                    <span>入网仪器</span>
+                </div>
+                <div class="eng-tit">RU WANG YI QI</div>
+                <div class="ins-nav-l"></div>
+                <a href="#" class="instrument-nav-more">更多>></a>
+            </div>
+
+            <div class="instrument-con">
+                <div class="btn-left" id="lbtn"></div>
+                <div class="ins-con-cens">
+                    <div class="ins-con-bigcon">
+                        <div class="ins-con-cen">
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href=""><img src="images/banner_01.jpg" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ins-con-cen">
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/administrator1.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/1.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/4.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/3.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ins-con-cen">
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/net-instrument%202.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/slider-arrow.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/paihang.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+                            <div class="ins-cen-d">
+                                <div class="ins-cen-img">
+                                    <a href="#"><img src="images/news.png" alt=""></a>
+                                </div>
+                                <div class="ins-cen-text">
+                                    <div class="ins-name">
+                                        <b>仪器名称</b>
+                                    </div>
+                                    <hr>
+                                    <p>仪器所属单位名称</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-right" id="rbtn"></div>
+            </div>
+        </div>
+
+        <div class="company">
+            <div class="instrument-nav">
+                <div class="ins-nav-tit company-tit">
+                    <span>入网单位</span>
+                </div>
+                <div class="eng-tit">RU WANG DAN WEI</div>
+                <div class="ins-nav-l"></div>
+                <a href="#" class="instrument-nav-more">更多>></a>
+            </div>
+            <div class="company-name">
+                <div class="company-name-left">
+                    <ul>
+                        <li><a href="#">单称单名位位名称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">名单位称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">称单称单位名位名</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">单位名称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">位单名称单位名单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                    </ul>
+                </div>
+                <div class="company-name-left">
+                    <ul>
+                        <li><a href="#">单称单名位位名称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">名单位称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">称单称单位名位名</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">单位名称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">位单名称单位名单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                        <li><a href="#">称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-head">
+                <div>服务案例</div>
+            </div>
+            <div class="service-more">
+                <a href="#">更多>></a>
+            </div>
+            <div class="service-con">
+                <div class="service-left">
+                    <div class="service-box">
+                        <div class="picture-box">
+                            <img src="images/p_03.jpg" alt="">
+                        </div>
+                        <div class="tex-box">
+                            <div class="tex-box-name">
+                                <h4>服务案例名称案例的名称</h4>
+                                <p>服务机构单位名称</p>
+                            </div>
+                            <div class="tex-box-detail">
+                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
+                                <a href="#">更多>></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="picture-box">
+                            <img src="images/p_03.jpg" alt="">
+                        </div>
+                        <div class="tex-box">
+                            <div class="tex-box-name">
+                                <h4>服务案例名称案例的名称</h4>
+                                <p>服务机构单位名称</p>
+                            </div>
+                            <div class="tex-box-detail">
+                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
+                                <a href="#">更多>></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-left service-right">
+                    <div class="service-box">
+                        <div class="picture-box pic-box2">
+                            <img src="images/p_03.jpg" alt="">
+                        </div>
+                        <div class="tex-box">
+                            <div class="tex-box-name">
+                                <h4>服务案例名称案例的名称</h4>
+                                <p>服务机构单位名称</p>
+                            </div>
+                            <div class="tex-box-detail">
+                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
+                                <a href="#">更多>></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box ">
+                        <div class="picture-box pic-box2">
+                            <img src="images/p_03.jpg" alt="">
+                        </div>
+                        <div class="tex-box">
+                            <div class="tex-box-name">
+                                <h4>服务案例名称案例的名称</h4>
+                                <p>服务机构单位名称</p>
+                            </div>
+                            <div class="tex-box-detail">
+                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
+                                <a href="#">更多>></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="net-con-right">
+        <div class="ranking">
+            <div class="ranking-head">预约排行榜</div>
+            <div class="ranking-con">
+                <ul>
+                    <li>
+                        <div class="rank">1</div>
+                        <span class="rank-name">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank">2</div>
+                        <span class="rank-name">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank">3</div>
+                        <span class="rank-name">原子荧度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">4</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">5</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">6</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">7</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">8</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">9</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+                    <li>
+                        <div class="rank rank2">10</div>
+                        <span class="rank-name rank-name2">原子荧光光度计</span>
+                        <p class="rank-num">1488</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <div class="ranking-head">资源地图</div>
+            <div class="map-img">
+                <img src="images/map_03.jpg" alt="">
+            </div>
+        </div>
+        <div class="admin">
+            <div class="admin-top">
+                <span>管理员入口</span>
+            </div>
+            <div class="admin-bot">
+                <div class="admin-bot-l">
+                    <img src="images/administrator1.png" alt="" class="admin-img">
+                    <img src="images/administrator2.png" alt="" class="admin-img">
+                </div>
+
+                <div class="admin-bot-r">
+                    <a href="#">仪器管理单位</a>
+                    <a href="#">平台管理员</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <div class="foot-top">
+        <div class="foot-top-center">
+            <div class="link">
+                <span>友情链接</span>
+            </div>
+            <div class="friend">
+                <a href="#">中华人民共和国科技部</a>
+                <a href="#">国家科技基础条件平台中心</a>
+                <a href="#">中华科技共享网</a>
+                <a href="#">科研设施与仪器国家网络管理平台</a>
+                <a href="#">江西省科学技术厅</a>
+                <a href="#">江西省分析测试研究所</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-bot">
+        <div class="foot-bot-center">
+            <div>
+                <span>主办单位 : 江西省科学技术厅</span>
+                <span>赣ICP备14001343号-1</span>
+                <span>技术支持 : 北京国科知源科技有限公司</span>
+            </div>
+            <span class="visitors">您是本站第【<b>9999</b>】位访问者</span>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
