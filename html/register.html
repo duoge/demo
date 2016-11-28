@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../tools/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="header-top">
+        <div class="header-top-cen">
+            <div class="welcome">
+                <span>您好！欢迎来到 &nbsp;</span>
+            </div>
+
+            <div class="login-reg">
+                <a href="login.html" class="login">【 登录 】</a>
+                <a href="register.html" class="register">【 注册 】</a>
+                <a href="#" class="callus">联系我们</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-input">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+        </div>
+        <div class="province">
+            <h2> 江西省大型科研仪器网络管理平台</h2>
+        </div>
+        <div class="search">
+            <div class="search-top">
+                <select name="select" id="select">
+                    <option>全部</option>
+                    <option>全部1</option>
+                    <option>全部2</option>
+                </select>
+                <input type="text" placeholder="请输入您要搜索的关键字">
+                <button id="search-btn">搜 索</button>
+            </div>
+            <div class="hotkeywords">
+                <span>热门关键词：</span>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="reg-container">
+    <h3>用户注册</h3>
+    <div class="reg-con">
+        <div class="inp-container">
+            <span>真实姓名</span>
+            <label>
+                <input type="text" id="rel-name" class="reg-inp" required="required">
+            </label>
+            <b> * 请输入真实姓名</b>
+        </div>
+        <div class="inp-container">
+            <span>用户昵称</span>
+            <label>
+                <input type="text" id="nickname" class="reg-inp" required="required">
+            </label>
+            <b> * 请输入用户昵称</b>
+        </div>
+        <div class="inp-container">
+            <span><i>密码</i>密码</span>
+            <label>
+                <input type="password" id="password" class="reg-inp" required="required">
+            </label>
+            <b> * 请输入密码</b>
+        </div>
+        <div class="inp-container">
+            <span>确认密码</span>
+            <label>
+                <input type="password" id="confirm-pwd" class="reg-inp" required="required">
+            </label>
+            <b> * 请再次输入密码</b>
+        </div>
+        <div class="inp-container">
+            <span>联系电话</span>
+            <label>
+                <input type="tel" id="phone" class="reg-inp" required="required">
+            </label>
+            <b> * 请输入您的联系电话</b>
+        </div>
+        <div class="inp-container">
+            <span><i>邮箱</i>邮箱</span>
+            <label>
+                <input type="email" id="email" class="reg-inp" required="required">
+            </label>
+            <b> * 请输入您常用的邮箱地址</b>
+        </div>
+        <div class="inp-container">
+            <span>所在单位</span>
+            <select>
+                <option>请选择</option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+            <b> * 必填！请选择单位类型</b>
+        </div>
+        <div class="inp-container">
+            <span><i>职称</i>职称</span>
+            <select>
+                <option>请选择</option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+            <b> * 必填！请选择您的职称</b>
+        </div>
+
+        <input type="reset" id="reset-btn" value="重置">
+        <input type="submit" id="submit-btn" value="提交">
+    </div>
+
+
+</div>
+
+
+<div class="footer">
+    <div class="foot-bot">
+        <div class="foot-bot-center" style="margin-top: 30px">
+            <div>
+                <span>主办单位 : 江西省科学技术厅</span>
+                <span>赣ICP备14001343号-1</span>
+                <span>技术支持 : 北京国科知源科技有限公司</span>
+            </div>
+            <span class="visitors">您是本站第【<b>9999</b>】位访问者</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

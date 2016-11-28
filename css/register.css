@@ -1,0 +1,101 @@
+.reg-container {
+    height: 620px;
+    width: 1261px;
+    margin: 0 auto;
+    border: 1px solid #00b8ee;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.reg-container h3 {
+    color: #0156a6;
+    font-size: 22px;
+    margin-top: 50px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.reg-con {
+    margin-left: 410px;
+
+}
+
+.reg-inp {
+    height: 27px;
+    width: 278px;
+    background-color: #effaff;
+    border: 1px solid #00b7f0;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.inp-container select {
+    font-size: 13px;
+    color: gray;
+    height: 30px;
+    width: 285px;
+    background-color: #effaff;
+    border: 1px solid #00b7f0;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.inp-container select option {
+    padding-left: 5px;
+    font-size: 13px;
+    color: gray;
+}
+
+.inp-container {
+    margin-top: 18px;
+}
+
+.inp-container span {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.inp-container b {
+    font-size: 12px;
+    padding-left: 6px;
+    color: red;
+    font-weight: normal;
+}
+
+.inp-container i {
+    color: white;
+}
+
+#reset-btn, #submit-btn {
+    height: 35px;
+    width: 82px;
+    background-color: #ff952d;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    margin-top: 40px;
+    box-shadow: 1px 1px 5px gray;
+
+}
+
+#reset-btn {
+    margin-left: 125px;
+}
+
+#submit-btn {
+    margin-left: 50px;
+}
+#reset-btn:hover, #submit-btn:hover{
+    background-color: #eb8705;
+}
+
+
+
+
+

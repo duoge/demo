@@ -1,0 +1,131 @@
+.container {
+    height: 504px;
+    width: 100%;
+    background-color: #00b8ee;
+}
+
+.contain-cen {
+    width: 1261px;
+    margin: 0 auto;
+    height: 504px;
+    background: url("../images/login-bg_03.jpg") no-repeat;
+    overflow: hidden;
+}
+
+.login-container {
+    height: 390px;
+    width: 294px;
+    background-color: rgba(1, 88, 115, 0.9);
+    box-shadow: 2px 2px 8px #015873;
+    margin-left: 850px;
+    margin-top: 62px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login-container p {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.user-name {
+    width: 240px;
+    height: 32px;
+    margin: 20px auto 0;
+    border: 1px solid #ff952d;
+    background-color: white;
+}
+
+.user-name span {
+    float: left;
+    height: 32px;
+    width: 65px;
+    background-color: #ff952d;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.passw span {
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#name, #password, #verification {
+    width: 170px;
+    height: 32px;
+    float: left;
+    border: 0;
+    padding-left: 5px;
+    /*outline: none;*/
+    color: gray;
+    font-size: 13px;
+}
+
+.verificat {
+    height: 34px;
+    width: 88px;
+    margin: 18px auto 0;
+    background-color: white;
+}
+
+.user-login {
+    display: block;
+    height: 40px;
+    width: 172px;
+    background-color: #ff952d;
+    margin: 25px auto;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+.user-login b {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 10px;
+    display: block;
+    margin-left: 10px;
+
+}
+
+.user-login:hover {
+    background-color: #eb8705;
+}
+
+.forget a {
+    float: right;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #ff952d;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
