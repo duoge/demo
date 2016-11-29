@@ -1,4 +1,4 @@
-#instrument {
+#download {
     font-size: 20px;
     font-weight: bold;
     color: #ff932c;
@@ -35,8 +35,35 @@
     padding-left: 30px;
 }
 
-.instrument-left {
-    float: left;
-
+.download-content {
+    overflow: hidden;
 }
+
+.download-list {
+    float: left;
+    margin-top: 40px;
+    width: 550px;
+}
+
+.download-list li {
+    list-style: disc outside;
+    color: #ffa300;
+    font-size: 12px;
+    margin-left: 30px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-bottom: 2px solid #efefef;
+}
+
+.download-list li a {
+    color: #313131;
+    font-size: 13px;
+}
+.download-list li b{
+    float: right;
+    color: black;
+    font-weight: normal;
+}
+
+
 

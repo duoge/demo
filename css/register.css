@@ -91,11 +91,7 @@
 #submit-btn {
     margin-left: 50px;
 }
-#reset-btn:hover, #submit-btn:hover{
+
+#reset-btn:hover, #submit-btn:hover {
     background-color: #eb8705;
 }
-
-
-
-
-
