@@ -2,104 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>登录</title>
+    <title>用户登录</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../tools/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
-<div id="header">
-    <div class="header-top">
-        <div class="header-top-cen">
-            <div class="welcome">
-                <span>您好！欢迎来到 &nbsp;</span>
-            </div>
-
-            <div class="login-reg">
-                <a href="login.html" class="login">【 登录 】</a>
-                <a href="register.html" class="register">【 注册 】</a>
-                <a href="#" class="callus">联系我们</a>
-            </div>
-        </div>
+<div class="header">
+    <div class="head_cen">
+        <span>【北京】 您好，找仪网欢迎您</span>
+        <a href="#" class="head_rig">【 我是供方 】</a>
+        <a href="#" class="head_rig">【 我是需方 】</a>
     </div>
-
-    <div class="logo-input">
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
-        </div>
-        <div class="province">
-            <h2> 江西省大型科研仪器网络管理平台</h2>
-        </div>
-        <div class="search">
-            <div class="search-top">
-                <select name="select" id="select">
-                    <option>全部</option>
-                    <option>全部1</option>
-                    <option>全部2</option>
-                </select>
-                <input type="text" placeholder="请输入您要搜索的关键字">
-                <button id="search-btn">搜 索</button>
-            </div>
-            <div class="hotkeywords">
-                <span>热门关键词：</span>
-
-            </div>
-        </div>
-    </div>
-
 </div>
 
-<div class="container">
-    <div class="contain-cen">
-        <div class="login-container">
-            <p>用户登录</p>
-            <div class="user-name">
-                <span>用户名</span>
-                <label>
-                    <input type="text" id="name" placeholder="请输入用户名">
-                </label>
+<div class="content">
+    <div class="content_c">
+        <div class="content_top">
+            <div class="reg_logo">
+                <a href="#"><img src="../images/logo.png" alt=""></a>
             </div>
-            <div class="user-name passw">
-                <span>密码</span>
-                <label>
-                    <input type="password" id="password" placeholder="请输入密码">
-                </label>
-            </div>
-            <div class="user-name">
-                <span>验证码</span>
-                <label>
-                    <input type="text" id="verification" placeholder="请输入验证码">
-                </label>
-            </div>
-            <div class="verificat">
-
-            </div>
-            <a class="user-login" href="#">
-                <b> 登录</b>
-            </a>
-            <div class="forget">
-                <a href="register.html">免费注册</a>
-                <a href="#">忘记密码</a>
-
+            <div class="reg_logo_tex">
+                <a href="#">返回首页</a>
+                <span>|</span>
+                <a href="#">帮助中心</a>
             </div>
         </div>
     </div>
-
 </div>
+<div class="login_container">
+    <div class="login_center">
+        <div class="bgimg_box">
+            <img src="../images/bg.png" alt="">
+        </div>
+        <div class="log_inp_box">
+            <h3>
+                <a class="log_change_b  btn_bgcolor" href="javascript:void(0)">用户登录</a>
+                <a class="log_change_b " href="javascript:void(0)">机构登录</a>
+            </h3>
+            <div class="log_container log_visibility">
+                <p><a href="#">免费注册</a></p>
+                <form action="">
+                    <label>
+                        <input type="text" class="log_username" placeholder=" 请输入用户名 ">
+                    </label>
+                    <label>
+                        <input type="text" class="log_userpwd" placeholder=" 请输入登录密码">
+                    </label>
+                    <label>
+                        <input type="text" class="log_usercode" placeholder=" 请填写下图所示验证码">
+                    </label>
 
+                    <div class="log_code_box">
+                        <div class="log_code"></div>
+                        <a href="#">看不清 ? 换一张</a>
+                    </div>
+
+                    <button class="log_btn">登录</button>
+
+                    <div class="rem_box">
+                        <input type="checkbox" id="rem" checked="checked"><span>记住密码</span>
+                        <input type="checkbox" id="automatic" checked="checked"><span>7天自动登录</span>
+                        <a href="#">忘记密码</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="log_container">
+                <p><a href="#">免费注册</a></p>
+                <form action="">
+                    <label>
+                        <input type="text" class="log_username log_username2" placeholder=" 组织机构名称">
+                    </label>
+                    <label>
+                        <input type="text" class="log_userpwd" placeholder=" 请输入登录密码">
+                    </label>
+                    <label>
+                        <input type="text" class="log_usercode" placeholder=" 请填写下图所示验证码">
+                    </label>
+
+                    <div class="log_code_box">
+                        <div class="log_code"></div>
+                        <a href="#">看不清 ? 换一张</a>
+                    </div>
+
+                    <button class="log_btn">登录</button>
+
+                    <div class="rem_box">
+                        <input type="checkbox" id="rem2" checked="checked"><span>记住密码</span>
+                        <input type="checkbox" id="automatic2" checked="checked"><span>7天自动登录</span>
+                        <a href="#">忘记密码</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <div class="footer">
-    <div class="foot-bot">
-        <div class="foot-bot-center" style="margin-top: 30px">
-            <div>
-                <span>主办单位 : 江西省科学技术厅</span>
-                <span>赣ICP备14001343号-1</span>
-                <span>技术支持 : 北京国科知源科技有限公司</span>
-            </div>
-            <span class="visitors">您是本站第【<b>9999</b>】位访问者</span>
-        </div>
+    <div class="foot_cen">
+        <p>
+            <a href="#">招商加盟</a>
+            <a href="#">合作单位</a>
+            <a href="#">关于我们</a>
+            <a href="#">人才招聘</a>
+        </p>
+        <ul>
+            <li>copyright 2016</li>
+            <li>北京国科知源科技有限公司</li>
+            <li>All rights reserved.</li>
+            <li>京IPC备 163034614号</li>
+        </ul>
     </div>
 </div>
+
+<script src="../js/login.js"></script>
 </body>
 </html>

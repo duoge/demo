@@ -2,685 +2,1614 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>找仪网</title>
+    <link rel="icon" href="images/img_index/ico_logo.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    <script src="tools/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
-<div id="header">
-    <div class="header-top">
-        <div class="header-top-cen">
-            <div class="welcome">
-                <span>您好！欢迎来到 &nbsp;</span>
-            </div>
+<div class="header">
+    <div class="head_cen">
+        <span>【北京】 您好，找仪网欢迎您</span>
+        <span>【<a href="html/login.html" class="head_lg">登录</a>】</span>
+        <span>【<a href="html/register.html" class="head_reg">注册</a>】</span>
+        <a href="" class="head_rig">【 我是供方 】</a>
+        <a href="#" class="head_rig">【 我是需方 】</a>
+    </div>
+</div>
 
-            <div class="login-reg">
-                <a href="html/login.html" class="login">【 登录 】</a>
-                <a href="html/register.html" class="register">【 注册 】</a>
-                <a href="#" class="callus">联系我们</a>
+<!--logo 搜索-->
+<div class="logo_search">
+    <div class="logo"><a href="index.html"><img src="images/img_index/index_logo.png" alt=""></a></div>
+    <div class="search">
+        <div class="search_nav">
+            <ul>
+                <li class="sea_list_color">全部</li>
+                <li>仪器</li>
+                <li>检测</li>
+                <li>机构</li>
+                <li>专家</li>
+                <li>需求</li>
+            </ul>
+            <div class="input_con">
+                <form action="">
+                    <label>
+                        <input type="text" class="index_search" placeholder=" 请输入关键字">
+                    </label>
+                    <input type="submit" id="search_btn" class="sea_btn" value="搜索">
+                </form>
+            </div>
+            <div class="inp_bottom">
+                <a href="#">防潮箱</a>
+                <a href="#">离心机</a>
+                <a href="#">灭菌器</a>
+                <a href="#">蒸馏水器</a>
+                <a href="#">大型仪器</a>
             </div>
         </div>
     </div>
-
-    <div class="logo-input">
-        <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-        </div>
-        <div class="province">
-            <h2> 江西省大型科研仪器网络管理平台</h2>
-        </div>
-        <div class="search">
-            <div class="search-top">
-                <select name="select" id="select">
-                    <option>全部</option>
-                    <option>全部全</option>
-                    <option>全部全</option>
-                </select>
-                <input type="text" placeholder="请输入您要搜索的关键字">
-                <button id="search-btn">搜 索</button>
-            </div>
-            <div class="hotkeywords">
-                <span>热门关键词：</span>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="nav">
-        <div class="all">全部仪器分类</div>
-        <a href="#" id="firstpage">首页</a>
-        <a href="html/introduction.html">平台简介</a>
-        <a href="html/instrument.html">入网仪器</a>
-        <a href="html/network-unit.html">入网单位</a>
-        <a href="#">政策法规</a>
-        <a href="html/download.html" id="download">文件下载</a>
+    <div class="logo_search_r">
+        <a href="#">发布服务</a>
+        <a href="#" style="margin-right: 25px;">发布需求</a>
     </div>
 </div>
 
 <div class="content">
-    <div class="content-top">
+    <!--导航栏  menu  登陆注册-->
+    <div class="content_nav_con">
+        <img src="images/img_index/111.png" alt="" class="content_nav_bg">
+        <div class="content_nav">
+            <div class="content_nav_all">
+                <h2 class="all_classify">全部分类</h2>
+                <!--menu-->
+                <div class="menu_container">
+                    <div class="menu_reserve sideMenu">
+                        <div class="m_r menu_r">
+                            <h2>仪 器 预 约</h2>
+                        </div>
+                        <ul class="menu_list">
+                            <li>分析仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>电子光学仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">透射电镜</a>
+                                            <a href="#">扫描电镜</a>
+                                            <a href="#">电子探针</a>
+                                            <a href="#">电子能谱仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>质谱仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">有机质谱仪</a>
+                                            <a href="#">无机质谱仪</a>
+                                            <a href="#">同位素质谱仪</a>
+                                            <a href="#">离子探针</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>X射线仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">X射线衍射仪</a>
+                                            <a href="#">X射线荧光光谱仪</a>
+                                            <a href="#">X射线能谱仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>光谱仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">紫外可见光光度计</a>
+                                            <a href="#">荧光分光光度计</a>
+                                            <a href="#">原子荧光光谱仪</a>
+                                            <a href="#">光电直读光谱仪</a>
+                                            <a href="#">激光光谱仪</a>
+                                            <a href="#">光谱成像仪</a>
+                                            <a href="#">光声光谱仪</a>
+                                            <a href="#">红外光谱仪</a>
+                                            <a href="#">拉曼光谱仪</a>
+                                            <a href="#">圆二色光谱仪</a>
+                                            <a href="#">旋光光谱仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>色谱仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">气相色谱仪</a>
+                                            <a href="#">液相色谱仪</a>
+                                            <a href="#">离子色谱仪</a>
+                                            <a href="#">薄层扫描色谱仪</a>
+                                            <a href="#">凝胶色谱仪</a>
+                                            <a href="#">超临界色谱仪</a>
+                                            <a href="#">电泳仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>波谱仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">核磁共振波谱仪</a>
+                                            <a href="#">顺磁共振波谱仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电化学仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">电化学传感器</a>
+                                            <a href="#">库仑分析仪</a>
+                                            <a href="#">极谱仪</a>
+                                            <a href="#">电位滴定仪</a>
+                                            <a href="#">离子浓度计</a>
+                                            <a href="#">酸度计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>显微镜及图象分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">光学显微镜</a>
+                                            <a href="#">激光共焦显微镜</a>
+                                            <a href="#">激光共焦显微镜</a>
+                                            <a href="#">图像分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>热分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">差热分析仪</a>
+                                            <a href="#">示差扫描量热计</a>
+                                            <a href="#">热天平</a>
+                                            <a href="#">导热系数测定仪</a>
+                                            <a href="#">热膨胀系数测定仪</a>
+                                            <a href="#">热成像仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>生化分离分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">氨基酸及多肽分析仪</a>
+                                            <a href="#">凝胶扫描仪</a>
+                                            <a href="#">生物化学发光仪</a>
+                                            <a href="#">生化分析仪</a>
+                                            <a href="#">酶标仪</a>
+                                            <a href="#">DNA合成仪</a>
+                                            <a href="#">DNA测序仪</a>
+                                            <a href="#">DNA样本制备仪</a>
+                                            <a href="#">基因导入仪</a>
+                                            <a href="#">多肽合成仪</a>
+                                            <a href="#">PCR仪</a>
+                                            <a href="#">流式细胞仪</a>
+                                            <a href="#">离心机</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>环境与农业分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">大气污染监测仪器</a>
+                                            <a href="#">COD分析仪 </a>
+                                            <a href="#">BOD分析仪 </a>
+                                            <a href="#">TOC分析仪</a>
+                                            <a href="#">烟尘浓度计</a>
+                                            <a href="#">油污染测量仪</a>
+                                            <a href="#">浊度计</a>
+                                            <a href="#">环境噪声测量仪</a>
+                                            <a href="#">土壤水分测量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>样品前处理及制备仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">微波消解装置</a>
+                                            <a href="#">微波萃取装置 </a>
+                                            <a href="#">快速溶液萃取装置 </a>
+                                            <a href="#">固体萃取装置</a>
+                                            <a href="#">超临界萃取装置</a>
+                                            <a href="#">超薄切片机</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
 
-        <div class="menus">
-            <div class="menu">
-                <div class="menu-left">
-                    <ul>
-                        <li class="menu-li"><a href="#">仪器所属大类 </a></li>
-                        <li class="menu-right menu-right1">
-                            <a href="#">科学仪器中心</a>
-                            <a href="#">大型科学装置</a>
-                            <a href="#">科学仪器服务单元</a>
-                            <a href="#">单台套科学仪器设备</a>
-                        </li>
-                    </ul>
-                    <div class="menu-left-bot">
-                        <a href="#">大型科学装置</a>
-                        <a href="#">单台套科学仪器</a>
-                    </div>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu-left">
-                    <ul>
-                        <li class="menu-li"><a href="#">仪器所属小类 </a></li>
-                        <li class="menu-right menu-right2">
-                            <a href="#">分析仪器</a>
-                            <a href="#">物理性能测试仪器</a>
-                            <a href="#">计量仪器</a>
-                            <a href="#">电子测量仪器</a>
-                            <a href="#">海洋仪器</a>
-                            <a href="#">地球探测仪器</a>
-                            <a href="#">大气探测仪器</a>
-                            <a href="#">特种检测仪器</a>
-                            <a href="#">激光器</a>
-                            <a href="#">工艺试验仪器</a>
-                            <a href="#">计算机及其配套设备</a>
-                            <a href="#">天文仪器</a>
-                            <a href="#">科学研究仪器</a>
-                            <a href="#">核仪器</a>
-                            <a href="#">其他仪器</a>
-                        </li>
-                    </ul>
-                    <div class="menu-left-bot menu-left-bot2">
-                        <a href="#">分析仪器</a>
-                        <a href="#">计量仪器</a>
-                        <a href="#">电子测试仪器</a>
-                        <a href="#">海洋仪器</a>
-                    </div>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu-left">
-                    <ul>
-                        <li class="menu-li"><a href="#">所属科学领域 </a></li>
-                        <li class="menu-right menu-right3">
-                            <a href="#">数学</a>
-                            <a href="#">信息科学与统计科学</a>
-                            <a href="#">力学</a>
-                            <a href="#">物理学</a>
-                            <a href="#">化学</a>
-                            <a href="#">天文学</a>
-                            <a href="#">地球科学</a>
-                            <a href="#">生物学</a>
-                            <a href="#">心里学</a>
-                            <a href="#">农学</a>
-                            <a href="#">林学</a>
-                            <a href="#">畜牧、兽医科学</a>
-                            <a href="#">水产学</a>
-                            <a href="#">基础医学</a>
-                            <a href="#">临床医学</a>
-                            <a href="#">预防医学与公共卫生学</a>
-                            <a href="#">军事医学与特种医学学</a>
-                            <a href="#">药学</a>
+                                </div>
+                            </li>
+                            <li>物理性能测试仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>力学性能测试仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">材料试验机</a>
+                                            <a href="#">硬度计</a>
+                                            <a href="#">高温高压三轴仪</a>
+                                            <a href="#">表面界面张力仪</a>
+                                            <a href="#">接触角测量仪</a>
+                                            <a href="#">粘度计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>大地测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">经纬仪</a>
+                                            <a href="#">水准仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>光电测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">光放大器</a>
+                                            <a href="#">光波长计</a>
+                                            <a href="#">光功率计</a>
+                                            <a href="#">光时域反射仪</a>
+                                            <a href="#">光频域测量仪</a>
+                                            <a href="#">光偏振态分析仪</a>
+                                            <a href="#">光纤多参数测量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>声学振动仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">声速／声衰减测量仪</a>
+                                            <a href="#">声纳仪</a>
+                                            <a href="#">声学海流剖面仪</a>
+                                            <a href="#">声学计程仪</a>
+                                            <a href="#">声学悬浮沙浓度计</a>
+                                            <a href="#">振动仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>颗粒度测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">粒子计数器</a>
+                                            <a href="#">粒度分布测量仪</a>
+                                            <a href="#">孔隙度／比表面测量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>探伤仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">X射线探伤仪</a>
+                                            <a href="#">磁力探伤仪</a>
+                                            <a href="#">超声探伤仪</a>
+                                            <a href="#">涡流探伤仪</a>
+                                            <a href="#">伽马射线探伤仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>计量仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>长度计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">螺旋线基准装置</a>
+                                            <a href="#">多齿分度台基准装置</a>
+                                            <a href="#">激光小角度测量仪基准装置</a>
+                                            <a href="#">表面粗糙度基准装置</a>
+                                            <a href="#">石油螺纹参量基准装置</a>
+                                            <a href="#">平面度国家基准装置</a>
+                                            <a href="#">圆锥量规锥度国家基准装置</a>
+                                            <a href="#">齿轮渐开线标准装置</a>
+                                            <a href="#">量块工作基准</a>
+                                            <a href="#">米动态校准仪标准装置</a>
+                                            <a href="#">光学仪器检具检定装置</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>热学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">K温度基准装置</a>
+                                            <a href="#">一等温度标准装置</a>
+                                            <a href="#">K温度工作基准装置</a>
+                                            <a href="#">水流量基准</a>
+                                            <a href="#">气体流量基准装置</a>
+                                            <a href="#">音速喷嘴法气体流量标准装置</a>
+                                            <a href="#">皂膜式气体流量标准装置</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>力学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">20MN基准测力机</a>
+                                            <a href="#">300N副基准测力机</a>
+                                            <a href="#">1kN副基准测力机</a>
+                                            <a href="#">塑料球压痕硬度基准</a>
+                                            <a href="#">洛氏硬度国家副基准</a>
+                                            <a href="#">布氏硬度基准装置</a>
+                                            <a href="#">维氏硬度基准装置</a>
+                                            <a href="#">显微硬度基准装置</a>
+                                            <a href="#">肖氏硬度副基准装置</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电磁学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">超导强磁场标准</a>
+                                            <a href="#">磁感应强度国家基准</a>
+                                            <a href="#">直流电阻副基准</a>
+                                            <a href="#">电容损耗因数基准</a>
+                                            <a href="#">单相工频电能基准装置</a>
+                                            <a href="#">直流电动势副基准</a>
+                                            <a href="#">数字多用表检定装置</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>时间频率计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">氢原子钟</a>
+                                            <a href="#">激光冷却铯原子喷泉时间频率基准</a>
+                                            <a href="#">铯微波综合器</a>
+                                            <a href="#">频率综合器</a>
+                                            <a href="#">铷钟</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>声学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">耦合腔互易法声压基准</a>
+                                            <a href="#">毫瓦级超声功率副基准装置</a>
+                                            <a href="#">气导听力零级基准装置</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>光学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">光纤长度标准</a>
+                                            <a href="#">光纤损耗标准</a>
+                                            <a href="#">光纤群折射率测量装置</a>
+                                            <a href="#">漫透射视觉</a>
+                                            <a href="#">曝光量基准</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电离辐射计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">丙胺酸/ESR吸收剂量标准</a>
+                                            <a href="#">标准热释光剂量计</a>
+                                            <a href="#">中能X射线（60-250）keV照射量基准</a>
+                                            <a href="#">标准剂量计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电子学计量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">脉冲波形计量基准</a>
+                                            <a href="#">信号发生器检定装置</a>
+                                            <a href="#">自动网络参数标准</a>
+                                            <a href="#">测量接收机</a>
+                                            <a href="#">频谱分析仪</a>
+                                            <a href="#">矢量网络分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>电子测量仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>通用电子测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">直流稳压／稳流电源</a>
+                                            <a href="#">信号发生器</a>
+                                            <a href="#">示波器</a>
+                                            <a href="#">数字频率计</a>
+                                            <a href="#">扫频仪</a>
+                                            <a href="#">集成电路测试仪</a>
+                                            <a href="#">图示仪</a>
+                                            <a href="#">频谱分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>射频和微波测试仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">EMI/EMC测试系统</a>
+                                            <a href="#">天线和雷达截面测量系统</a>
+                                            <a href="#">信号开发和截获测量系统</a>
+                                            <a href="#">射频和微波测量系统</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>通讯测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">无线通讯测量仪</a>
+                                            <a href="#">有线通讯测量仪</a>
+                                            <a href="#">数字通讯测量仪</a>
+                                            <a href="#">光通讯测量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>网络分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">矢量分析仪</a>
+                                            <a href="#">逻辑分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>大规模集成电路测试仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">数字电路测试系统</a>
+                                            <a href="#">模拟电路测试系统</a>
+                                            <a href="#">数模混合信号测试系统</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
 
-                        </li>
-                    </ul>
-                    <div class="menu-left-bot menu-left-bot2">
-                        <a href="#">地球科学</a>
-                        <a href="#">信息技术</a>
-                        <a href="#">材料科学</a>
-                        <a href="#">机械制造</a>
-                        <a href="#">化学工程</a>
-                        <a href="#">物理学</a>
-                    </div>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu-left">
-                    <ul>
-                        <li class="menu-li"><a href="#">仪器所属地区 </a></li>
-                        <li class="menu-right menu-right4">
-                            <a href="#">南昌市</a>
-                            <a href="#">九江市</a>
-                            <a href="#">上饶市</a>
-                            <a href="#">抚州市</a>
-                            <a href="#">宜春市</a>
-                            <a href="#">吉安市</a>
-                            <a href="#">赣州市</a>
-                            <a href="#">景德镇市</a>
-                            <a href="#">萍乡市</a>
-                            <a href="#">新余市</a>
-                            <a href="#">鹰潭市</a>
-                        </li>
-                    </ul>
-                    <div class="menu-left-bot menu-left-bot2">
-                        <a href="#">南昌市</a>
-                        <a href="#">九江市</a>
-                        <a href="#">上饶市</a>
-                        <a href="#">抚州市</a>
-                        <a href="#">宜春市</a>
-                        <a href="#">吉安市</a>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                            </li>
+                            <li>海洋仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>海洋水文测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">波浪测量仪器</a>
+                                            <a href="#">潮汐测量仪器</a>
+                                            <a href="#">海流测量仪器</a>
+                                            <a href="#">海水温盐测量仪器</a>
+                                            <a href="#">海洋深度测量仪器</a>
+                                            <a href="#">海冰测量仪器</a>
+                                            <a href="#">水色及透明度测量仪器</a>
+                                            <a href="#">综合测量仪器</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>多要素水文气象测量系统 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">锚系水文气象资料浮标系统</a>
+                                            <a href="#">水下多参数综合观测系统</a>
+                                            <a href="#">台站水文气象自动观测系统</a>
+                                            <a href="#">船用水文气象自动观测系统</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>海洋生物调查仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">叶绿素与初级生产力调查仪器</a>
+                                            <a href="#">微生物调查仪器</a>
+                                            <a href="#">浮游生物调查仪器</a>
+                                            <a href="#">底栖生物调查仪器</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>海水物理量测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">海水声学特性测量仪器</a>
+                                            <a href="#">海洋水体光学特性测量仪器</a>
+                                            <a href="#">海洋电磁学测量仪器</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>海洋遥感／遥测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">海洋表面波雷达（高频地波）</a>
+                                            <a href="#">多光谱扫描仪</a>
+                                            <a href="#">合成孔径雷达</a>
+                                            <a href="#">多模态微波仪</a>
+                                            <a href="#">雷达高度计</a>
+                                            <a href="#">多波段CCD相机</a>
+                                            <a href="#">机载红外测温仪</a>
+                                            <a href="#">中分辨率成像光谱仪</a>
+                                            <a href="#">海洋水色测量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>海洋采样设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">采水器</a>
+                                            <a href="#">底质采样器</a>
+                                            <a href="#">生物采样器</a>
+                                            <a href="#">地质采样器</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>地球探测仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>电法仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">直流电法仪</a>
+                                            <a href="#">交流电法仪</a>
+                                            <a href="#">激发极化法仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电磁法仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">大地电磁法仪</a>
+                                            <a href="#">瞬变电磁法仪</a>
+                                            <a href="#">频率域电磁法仪</a>
+                                            <a href="#">混场源电磁法仪</a>
+                                            <a href="#">核磁共振找水仪</a>
+                                            <a href="#">地质雷达</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>磁法仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">磁通门磁力仪</a>
+                                            <a href="#">质子旋进磁力仪</a>
+                                            <a href="#">光泵磁力仪</a>
+                                            <a href="#">超导磁力仪</a>
+                                            <a href="#">霍尔效应磁力仪</a>
+                                            <a href="#">磁阻效应磁力仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>重力仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">石英弹簧重力仪</a>
+                                            <a href="#">金属弹簧重力仪</a>
+                                            <a href="#">超导重力仪</a>
+                                            <a href="#">激光重力仪</a>
+                                            <a href="#">重力梯度仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>地震仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">浅层地震仪</a>
+                                            <a href="#">深层地震仪</a>
+                                            <a href="#">天然地震仪</a>
+                                            <a href="#">强震仪</a>
+                                            <a href="#">检波器</a>
+                                            <a href="#">地震勘探震源</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>地球物理测井仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">电法测井仪</a>
+                                            <a href="#">磁法测井仪</a>
+                                            <a href="#">电磁法测井仪</a>
+                                            <a href="#">声波测井仪</a>
+                                            <a href="#">放射性测井仪</a>
+                                            <a href="#">重力测井仪</a>
+                                            <a href="#">地震测井仪</a>
+                                            <a href="#">核磁共振测井仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>岩石矿物测试仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">磁化率测试仪</a>
+                                            <a href="#">密度测试仪</a>
+                                            <a href="#">岩石硬度测试仪</a>
+                                            <a href="#">原油水分测试仪</a>
+                                            <a href="#">岩石电参数测试仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>大气探测仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>气象台站观测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">地面气象观测仪器</a>
+                                            <a href="#">自动气象站</a>
+                                            <a href="#">大气辐射通量仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>高空气象探测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">无线电气象探空仪/地面接收设备</a>
+                                            <a href="#">臭氧探空仪/特殊要素探测器</a>
+                                            <a href="#">气象火箭与箭载传感器</a>
+                                            <a href="#">平流层科学气球平台/探测器 </a>
+                                            <a href="#">系留气艇平台/探测器</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>特殊大气探测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">大气电场仪</a>
+                                            <a href="#">雷电定位仪</a>
+                                            <a href="#">雷电辐射仪</a>
+                                            <a href="#">全天空云成像仪</a>
+                                            <a href="#">能见度仪</a>
+                                            <a href="#">气溶胶粒谱仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>主动大气遥感仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">微波气象雷达</a>
+                                            <a href="#">毫米波测云雷达</a>
+                                            <a href="#">晴空探测雷达、风廓线仪</a>
+                                            <a href="#">激光雷达</a>
+                                            <a href="#">无线电声探测系统</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>被动大气遥感仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">太阳/大气光谱辐射仪/光度计 </a>
+                                            <a href="#">紫外大气光谱辐射仪</a>
+                                            <a href="#">红外辐射计</a>
+                                            <a href="#">微波/毫米波辐射计/波谱仪</a>
+                                            <a href="#">全天空成像光谱辐射仪</a>
+                                            <a href="#">微压计</a>
+                                            <a href="#">掩星大气探测仪</a>
+                                            <a href="#">临边大气探测仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>高层大气/电离层探测器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">电离层探测仪</a>
+                                            <a href="#">中频相干散射雷达</a>
+                                            <a href="#">流星雷达</a>
+                                            <a href="#">非相干散射雷达</a>
+                                            <a href="#">气辉成像光度计</a>
+                                            <a href="#">极光成像光度计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>对地观测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">成像光谱仪</a>
+                                            <a href="#">合成孔径雷达</a>
+                                            <a href="#">干涉合成孔径雷达</a>
+                                            <a href="#">微波散射计</a>
+                                            <a href="#">微波高度计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>天文仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>天体测量仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">多普勒测距仪</a>
+                                            <a href="#">等高仪</a>
+                                            <a href="#">天体照相仪</a>
+                                            <a href="#">赤道仪</a>
+                                            <a href="#">四轴大型经纬仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>地面天文望远镜 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">光学、红外望远镜</a>
+                                            <a href="#">毫米波望远镜</a>
+                                            <a href="#">射电望远镜</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>空间天文望远镜 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">X射线望远镜 </a>
+                                            <a href="#"> γ射线望远镜 </a>
+                                            <a href="#">可见光、紫外和红外望远镜</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>医学诊断仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>临床检验分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">血液分析仪</a>
+                                            <a href="#">细菌分析仪</a>
+                                            <a href="#">尿液分析仪</a>
+                                            <a href="#">血气分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>影像诊断仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">X射线断层扫描诊断仪 </a>
+                                            <a href="#">核磁共振断层诊断仪</a>
+                                            <a href="#">单光子断层成像仪</a>
+                                            <a href="#">正电子扫描成像仪</a>
+                                            <a href="#">透视激光数字成像系统</a>
+                                            <a href="#">X射线诊断机</a>
+                                            <a href="#">超声波诊断机</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电子诊察仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">心电图机 </a>
+                                            <a href="#">脑电图仪 </a>
+                                            <a href="#">肌电图仪</a>
+                                            <a href="#">眼震电图仪</a>
+                                            <a href="#">电声诊断仪</a>
+                                            <a href="#">监护系统</a>
+                                            <a href="#">肺功能检测仪</a>
+                                            <a href="#">血流图仪</a>
+                                            <a href="#">电子压力测定装置</a>
+                                            <a href="#">神经功能测定仪</a>
+                                            <a href="#">内窥镜</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </li>
+                            <li>核仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>核辐射探测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">γ射线辐射仪</a>
+                                            <a href="#">α射线辐射仪</a>
+                                            <a href="#">β射线辐射仪</a>
+                                            <a href="#">中子辐射仪</a>
+                                            <a href="#">X射线辐射仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>活化分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">中子活化分析仪 </a>
+                                            <a href="#">带电粒子活化分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>离子束分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">沟道效应分析仪 </a>
+                                            <a href="#">核反应分析仪 </a>
+                                            <a href="#">加速器质谱仪</a>
+                                            <a href="#">背散射分析仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>核效应分析仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">正电子湮没仪 </a>
+                                            <a href="#">穆斯堡尔谱仪 </a>
+                                            <a href="#">扰动角关联和角分布谱仪</a>
+                                            <a href="#">μ介子自旋转动谱仪 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>中子散射及衍射仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">中子散射谱仪 </a>
+                                            <a href="#">中子衍射谱仪 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>特种检测仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>射线检测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">高性能射线DR/ICT在线检测装置</a>
+                                            <a href="#">便携式高性能射线DR检测装置</a>
+                                            <a href="#">便携式高性能射线DR/CBS检测装置</a>
+                                            <a href="#">工业X光机</a>
+                                            <a href="#">射线/污染探测计</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>超声检测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">超声波测厚仪 </a>
+                                            <a href="#">厚钢板超声扫描成象检测仪</a>
+                                            <a href="#">低频超声导波管道减薄远程检测系统</a>
+                                            <a href="#">超声波焊缝缺陷高度定量检测仪</a>
+                                            <a href="#">非金属超声波检测仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电磁检测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">钢质管道高速漏磁探伤装置 </a>
+                                            <a href="#">带保温层承压设备脉冲涡流测厚仪 </a>
+                                            <a href="#">多通道磁记忆检测仪</a>
+                                            <a href="#">管线位置探测仪</a>
+                                            <a href="#">管道本体腐蚀内检测仪</a>
+                                            <a href="#">管道腐蚀防护状态检测仪</a>
+                                            <a href="#">油罐底版腐蚀状况漏磁检测仪</a>
+                                            <a href="#">表面裂纹漏磁检测仪</a>
+                                            <a href="#">智能低频电磁检测扫描仪</a>
+                                            <a href="#">杂散电流快速检测仪</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>声发射检测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">多通道声发射仪 </a>
+                                            <a href="#">全数字化声发射仪 </a>
+                                            <a href="#">压力管道泄漏声发射检测仪器</a>
+                                            <a href="#">声发射检测仪 </a>
+                                            <a href="#">管道泄漏检测仪 </a>
+                                            <a href="#">SCOUT结构在线监测仪 </a>
+                                            <a href="#">SWEAS数字式全波形声发射检测系统 </a>
+                                            <a href="#">智能声发射系列化检测仪器 </a>
+                                            <a href="#">全数字全波形声发射仪器 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>光电检测仪器 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">钢板表面缺陷在线检测仪 </a>
+                                            <a href="#">复合式气体检测仪 </a>
+                                            <a href="#">激光测距仪 </a>
+                                            <a href="#">红外测温仪 </a>
+                                            <a href="#">加速度测试仪 </a>
+                                            <a href="#">管道录象检测仪 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>工艺实验仪器
+                                <div class="menu_right">
+                                    <div class="menu_classify" style="margin-top: 20px">
+                                        <div class="menu_classify_l">
+                                            <span>汽车工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">红外线汽车排气分析仪</a>
+                                            <a href="#">模拟汽车运输振动台</a>
+                                            <a href="#">汽车操纵稳定性测试仪</a>
+                                            <a href="#">汽车颠簸试验台</a>
+                                            <a href="#">汽车电控系统检测仪</a>
+                                            <a href="#">汽车发动机吊装架</a>
+                                            <a href="#">汽车减速度仪</a>
+                                            <a href="#">汽车气压制动实验台</a>
+                                            <a href="#">汽车拖拉机综合测试仪</a>
+                                            <a href="#">汽车无荷测动表</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>化工、制药工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">蒸馏工艺实验设备 </a>
+                                            <a href="#">高压浸取工艺实验设备</a>
+                                            <a href="#">热交换工艺实验设备</a>
+                                            <a href="#">化学反应工艺实验设备</a>
+                                            <a href="#">纯化工艺实验设备</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>电子工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">电路板制造工艺实验设备 </a>
+                                            <a href="#">半导体集成电路工艺实验设备 </a>
+                                            <a href="#">电真空器件工艺实验设备</a>
+                                            <a href="#">电子产品通用工艺实验设备</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>加工工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">机加工工艺实验设备 </a>
+                                            <a href="#">电加工工艺实验设备 </a>
+                                            <a href="#">超声加工工艺实验设备</a>
+                                            <a href="#">热处理加工工艺实验设备 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>纺织工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">纺织称量仪器 </a>
+                                            <a href="#">纺织附属设备 </a>
+                                            <a href="#">纺织机械试验仪器</a>
+                                            <a href="#">纺织品染整设备 </a>
+                                            <a href="#">纺织设备 </a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu_classify">
+                                        <div class="menu_classify_l">
+                                            <span>食品工艺实验设备 ></span>
+                                        </div>
+                                        <div class="menu_classify_r">
+                                            <a href="#">发酵工艺实验设备 </a>
+                                            <a href="#">乳制品工艺实验设备 </a>
+                                            <a href="#">粮油制品工艺实验设备</a>
+                                            <a href="#">其他</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>其他</li>
+                            <!--<p style="height: 28px;border-right: 1px solid #c7c7c7;"></p>-->
+                        </ul>
+                        <div class="m_r2 menu_r">
+                            <h2>检 验 检 测</h2>
+                        </div>
+                        <ul class="menu_list">
+                            <li>食品检测
+                                <div class="menu_right">
+
+                                </div>
+                            </li>
+                            <li>金属材料检测
+                                <div class="menu_right">
+
+                                </div>
+                            </li>
+                            <li>环境监测</li>
+                            <li>能源化工</li>
+                            <li>药物检测</li>
+                            <li>纺织品及纤维</li>
+                            <li>生物监测</li>
+                            <li>轻工产品</li>
+                            <li>机械</li>
+                            <li>电器检测</li>
+                            <li>建材与建筑</li>
+                            <li>电磁兼容</li>
+                            <li>3C认证产品</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--仪器机构数量 需求信息展示 -->
+                <div class="information_display">
+                    <div class="display_box box_first">
+                        <img class="img1" src="images/img_index/4.png" alt="">
+                        <h4><span class="timer" data-to="3216" data-speed="1500"></span> 台 (套)</h4>
+                        <p>仪器设备</p>
+                    </div>
+                    <div class="line"><img src="images/img_index/42.png" alt=""></div>
+                    <div class="display_box">
+                        <img class="img2" src="images/img_index/5.png" alt="">
+                        <h4><span class="timer" data-to="86641" data-speed="1500"></span> 项</h4>
+                        <p>检测项目</p>
+                    </div>
+                    <div class="line"><img src="images/img_index/42.png" alt=""></div>
+                    <div class="display_box">
+                        <img class="img3" src="images/img_index/6.png" alt="">
+                        <h4><span class="timer" data-to="818" data-speed="1500"></span> 家</h4>
+                        <p>服务机构</p>
+                    </div>
+                    <div class="line"><img src="images/img_index/42.png" alt=""></div>
+                    <div class="display_box">
+                        <img class="img4" src="images/img_index/7.png" alt="">
+                        <h4><span class="timer" data-to="24530" data-speed="1500"></span> 个</h4>
+                        <p>需求信息</p>
+                    </div>
+                </div>
+
+                <!--首页登录注册模块-->
+                <div class="index_logreg_con">
+                    <div class="index_logreg_t">
+                        <img id="user_img" src="images/img_index/8.png" alt="">
+                        <p>Hi~ 你好 !</p>
+                        <a href="#" id="index_login">请登录</a>
+                        <a href="#" id="index_reg">免费注册 》</a>
+                    </div>
+                    <div class="index_logreg_b">
+                        <h6>公告</h6>
+                        <p>1、2016年10月1日，清华大学分析中心入住本网站</p>
+                        <p>2、2016年10月1日，清华大学分析中心入住本网站</p>
+                        <p>3、2016年10月1日，清华大学分析中心入住本网站</p>
+                    </div>
+                </div>
+            </div>
+            <!--顶部的导航-->
+            <div class="content_nav_list">
+                <a href="#" id="first_page">首 页</a>
+                <a href="#">仪器预约</a>
+                <a href="#">检验检测</a>
+                <a href="#">培训学院</a>
+                <a href="#">展会展览</a>
+                <a href="#">科研众筹</a>
+                <a href="#" id="equipment_mall">仪器商城</a>
+            </div>
         </div>
-
+    </div>
+    <!--banner-->
+    <div class="banner_con">
         <div id="banner" class="slideBox">
-            <div class="hd">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
+            <!--<div class="hd">-->
+            <!--<ul>-->
+            <!--<li>111</li>-->
+            <!--<li>222</li>-->
+            <!--</ul>-->
+            <!--</div>-->
             <div class="bd">
                 <ul>
-                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
-                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
-                    <li><a href="#"><img src="images/banner_01.jpg"/></a></li>
+                    <li><img src="images/img_index/banner2.png"/></li>
+                    <li><img src="images/img_index/banner1.png"/></li>
                 </ul>
             </div>
-
             <a class="prev" href="javascript:void(0)"></a>
             <a class="next" href="javascript:void(0)"></a>
-
-        </div>
-
-        <div class="announcement">
-            <div class="announcement-nav">
-                <div class="announcement-nav-d bg-img">通知公告</div>
-                <div class="announcement-nav-d">工作动态</div>
-                <div class="announcement-nav-d">行业新闻</div>
-            </div>
-            <div class="announcement-content">
-                <div class="annou-con-d visible">
-                    <ul class="news-list">
-                        <li><a href="#">1新闻新闻信息新闻新闻信息新</a></li>
-                        <li><a href="#">1新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信息新闻新信息新闻新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信息新闻信息</a></li>
-                        <li><a href="#">1新闻新闻信息新闻新闻信息</a></li>
-                    </ul>
-                    <a href="html/notice.html" class="news-more">更多 >></a>
-                </div>
-                <div class="annou-con-d">
-                    <ul class="news-list">
-                        <li><a href="#">2新闻新闻信息新闻新闻信息新</a></li>
-                        <li><a href="#">2新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">2新闻新闻信新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">2新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">2新闻新闻信息新闻信息</a></li>
-                        <li><a href="#">2新闻新闻信息新闻新闻信息</a></li>
-                    </ul>
-                    <a href="#" class="news-more">更多 >></a>
-                </div>
-                <div class="annou-con-d">
-                    <ul class="news-list">
-                        <li><a href="#">3新闻新闻信息新闻新闻信息新</a></li>
-                        <li><a href="#">3新闻新闻信息新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">3新闻新闻信新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">3新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">3新闻新闻信息新闻新信息新闻新闻信息</a></li>
-                        <li><a href="#">3新闻新闻信息新闻新闻信息</a></li>
-                        <li><a href="#">3新闻新闻信息新闻信息</a></li>
-                    </ul>
-                    <a href="#" class="news-more">更多 >></a>
-                </div>
-            </div>
         </div>
     </div>
 
-    <div class="all-information">
-        <div class="info-con">
-            <img src="images/net-instrument%20.png" alt="">
-            <h4><span class="timer" data-to="3216" data-speed="1500"></span> 台（套）</h4>
-            <p>入网仪器</p>
-        </div>
-        <div class="info-con">
-            <img src="images/net_03.jpg" alt="">
-            <h4><span class="timer" data-to="888" data-speed="1500"></span> 台（套）</h4>
-            <p>20万以上仪器数量</p>
-        </div>
-        <div class="info-con">
-            <img src="images/2.png" alt="">
-            <h4><span class="timer" data-to="818" data-speed="1500"></span> 家</h4>
-            <p>入网单位</p>
-        </div>
-        <div class="info-con last-info-con">
-            <img src="images/net-all.png" alt="">
-            <h4><span class="timer" data-to="32183" data-speed="1500"></span> 万元</h4>
-            <p>仪器总值</p>
-        </div>
-
-        <div class="new-info">
-            <p>最新入网单位 &nbsp;<span>66</span> 家</p>
-            <div>最新入网仪器 &nbsp;<span>88</span> 台（套）</div>
-        </div>
-
-    </div>
 </div>
 
-<div class="network-container">
-    <div class="net-con-left">
-        <div class="instrument">
-            <div class="instrument-nav">
-                <div class="ins-nav-tit">
-                    <span>入网仪器</span>
-                </div>
-                <div class="eng-tit">RU WANG YI QI</div>
-                <div class="ins-nav-l"></div>
-                <a href="#" class="instrument-nav-more">更多>></a>
+<div class="find17_box">
+    <!--找仪器-->
+    <div class="find_instruments">
+        <div class="find_title">
+            <div style="overflow: hidden">
+                <img src="images/img_index/12.png" alt="">
+                <h1>找仪器</h1>
             </div>
-
-            <div class="instrument-con">
-                <div class="btn-left" id="lbtn"></div>
-                <div class="ins-con-cens">
-                    <div class="ins-con-bigcon">
-                        <div class="ins-con-cen">
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/banner_01.jpg" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href=""><img src="images/banner_01.jpg" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="ins-con-cen">
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/administrator1.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/1.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/4.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/3.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="ins-con-cen">
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/net-instrument%202.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/slider-arrow.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/paihang.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-                            <div class="ins-cen-d">
-                                <div class="ins-cen-img">
-                                    <a href="#"><img src="images/news.png" alt=""></a>
-                                </div>
-                                <div class="ins-cen-text">
-                                    <div class="ins-name">
-                                        <b>仪器名称</b>
-                                    </div>
-                                    <hr>
-                                    <p>仪器所属单位名称</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-right" id="rbtn"></div>
-            </div>
+            <p>引领仪器共享科技时代，提供科研需求一站式服务 <br>
+                国家级科学仪器库，涵盖包罗万象数据功能 </p>
         </div>
 
-        <div class="company">
-            <div class="instrument-nav">
-                <div class="ins-nav-tit company-tit">
-                    <span>入网单位</span>
-                </div>
-                <div class="eng-tit">RU WANG DAN WEI</div>
-                <div class="ins-nav-l"></div>
-                <a href="#" class="instrument-nav-more">更多>></a>
-            </div>
-            <div class="company-name">
-                <div class="company-name-left">
-                    <ul>
-                        <li><a href="#">单称单名位位名称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">名单位称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">称单称单位名位名</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">单位名称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">位单名称单位名单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                    </ul>
-                </div>
-                <div class="company-name-left">
-                    <ul>
-                        <li><a href="#">单称单名位位名称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">名单位称单位名称单位名称单位名称</a> <span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">称单称单位名位名</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">单位名称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">位单名称单位名单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                        <li><a href="#">称单位名称单位名称</a><span>【入网<b>233</b>台】</span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="service">
-            <div class="service-head">
-                <div>服务案例</div>
-            </div>
-            <div class="service-more">
-                <a href="#">更多>></a>
-            </div>
-            <div class="service-con">
-                <div class="service-left">
-                    <div class="service-box">
-                        <div class="picture-box">
-                            <img src="images/p_03.jpg" alt="">
-                        </div>
-                        <div class="tex-box">
-                            <div class="tex-box-name">
-                                <h4>服务案例名称案例的名称</h4>
-                                <p>服务机构单位名称</p>
-                            </div>
-                            <div class="tex-box-detail">
-                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
-                                <a href="#">更多>></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-box">
-                        <div class="picture-box">
-                            <img src="images/p_03.jpg" alt="">
-                        </div>
-                        <div class="tex-box">
-                            <div class="tex-box-name">
-                                <h4>服务案例名称案例的名称</h4>
-                                <p>服务机构单位名称</p>
-                            </div>
-                            <div class="tex-box-detail">
-                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情要内容主要服务概要详情要内容主要服务概要详情要内容主要服务概要详情主要内容主要服务概要......</p>
-                                <a href="#">更多>></a>
-                            </div>
-                        </div>
+        <div class="ins_introduction">
+            <div class="ins_int1">
+                <img class="img" src="images/img_index/13.png" alt="">
+                <h3>仪器预约</h3>
+                <div class="picScroll-left">
+                    <div class="bd">
+                        <ul class="picList">
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称1</a>
+                                    <a class="source">这里是仪器来源1</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称2</a>
+                                    <a class="source">这里是仪器来源2</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称3</a>
+                                    <a class="source">这里是仪器来源3</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称4</a>
+                                    <a class="source">这里是仪器来源4</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="service-left service-right">
-                    <div class="service-box">
-                        <div class="picture-box pic-box2">
-                            <img src="images/p_03.jpg" alt="">
-                        </div>
-                        <div class="tex-box">
-                            <div class="tex-box-name">
-                                <h4>服务案例名称案例的名称</h4>
-                                <p>服务机构单位名称</p>
-                            </div>
-                            <div class="tex-box-detail">
-                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
-                                <a href="#">更多>></a>
-                            </div>
-                        </div>
+            </div>
+            <div class="ins_int2 ins_int1">
+                <img class="img2" src="images/img_index/14.png" alt="">
+                <h3>仪器租赁</h3>
+                <div class="picScroll-left">
+                    <div class="bd">
+                        <ul class="picList">
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称1</a>
+                                    <a class="source">这里是仪器来源1</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称2</a>
+                                    <a class="source">这里是仪器来源2</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称3</a>
+                                    <a class="source">这里是仪器来源3</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称4</a>
+                                    <a class="source">这里是仪器来源4</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="service-box ">
-                        <div class="picture-box pic-box2">
-                            <img src="images/p_03.jpg" alt="">
-                        </div>
-                        <div class="tex-box">
-                            <div class="tex-box-name">
-                                <h4>服务案例名称案例的名称</h4>
-                                <p>服务机构单位名称</p>
-                            </div>
-                            <div class="tex-box-detail">
-                                <p>详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要详情主要内容主要服务概要......</p>
-                                <a href="#">更多>></a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="ins_int3 ins_int1">
+                <img class="img3" src="images/img_index/15.png" alt="">
+                <h3>仪器购置</h3>
+                <div class="picScroll-left">
+                    <div class="bd">
+                        <ul class="picList">
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称1</a>
+                                    <a class="source">这里是仪器来源1</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称2</a>
+                                    <a class="source">这里是仪器来源2</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称3</a>
+                                    <a class="source">这里是仪器来源3</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"><a href="#"><img src="images/img_index/ins_pic_03.jpg"/></a></div>
+                                <div class="title">
+                                    <a class="name" href="#">这里是仪器名称4</a>
+                                    <a class="source">这里是仪器来源4</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="find_ins_btn">
+            <a class="ins_hot" href="#">热门</a>
+            <a class="ins_new" href="#">最新</a>
+        </div>
+    </div>
+    <div class="find_instruments_img">
+        <img src="images/img_index/40.png" alt="">
     </div>
 
-    <div class="net-con-right">
-        <div class="ranking">
-            <div class="ranking-head">预约排行榜</div>
-            <div class="ranking-con">
-                <ul>
-                    <li>
-                        <div class="rank">1</div>
-                        <span class="rank-name">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank">2</div>
-                        <span class="rank-name">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank">3</div>
-                        <span class="rank-name">原子荧度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">4</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">5</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">6</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">7</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">8</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">9</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
-                    <li>
-                        <div class="rank rank2">10</div>
-                        <span class="rank-name rank-name2">原子荧光光度计</span>
-                        <p class="rank-num">1488</p>
-                    </li>
+    <!--找检测-->
+    <div class="find_instruments find_detect">
+        <div class="find_title">
+            <div style="overflow: hidden">
+                <img src="images/img_index/12.png" alt="">
+                <h1>找检测</h1>
+            </div>
+            <p>精准对接检测需求，高质量全方位技术创新体验<br>
+                行业内检测专家，为优质保驾护航 </p>
+        </div>
 
-                </ul>
+        <div class="detect_introduction">
+            <div class="detect1">
+                <div class="detect1_left">
+                    <a href="#"><img class="detect1_img1" src="images/img_index/dete_pic_03.jpg" alt=""></a>
+                    <div class="detect1_left_box">
+                        <a href="#"><h3>检测项目名称</h3></a>
+                        <p>检测机构名称</p>
+                        <div>检测项目简介检测项目简介检测项目简介检测项目简介检测项目简介</div>
+                    </div>
+                </div>
+                <div class="detect1_left detect1_right">
+                    <a href="#"><img class="detect1_img2" src="images/img_index/dete_pic_03.jpg" alt=""></a>
+                    <div class="detect1_left_box">
+                        <a href="#"><h3>检测项目名称</h3></a>
+                        <p>检测机构名称</p>
+                        <div>检测项目简介检测项目简介检测项目简介检测项目简介检测项目简介</div>
+                    </div>
+                </div>
+            </div>
+            <div class="detect1" style="float: right">
+                <div class="detect1_left">
+                    <a href="#"><img class="detect1_img1" src="images/img_index/dete_pic_03.jpg" alt=""></a>
+                    <div class="detect1_left_box">
+                        <a href="#"><h3>检测项目名称</h3></a>
+                        <p>检测机构名称</p>
+                        <div>检测项目简介检测项目简介检测项目简介检测项目简介检测项目简介</div>
+                    </div>
+                </div>
+                <div class="detect1_left detect1_right">
+                    <a href="#"><img class="detect1_img2" src="images/img_index/dete_pic_03.jpg" alt=""></a>
+                    <div class="detect1_left_box">
+                        <a href="#"><h3>检测项目名称</h3></a>
+                        <p>检测机构名称</p>
+                        <div>检测项目简介检测项目简介检测项目简介检测项目简介检测项目简介</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="map">
-            <div class="ranking-head">资源地图</div>
-            <div class="map-img">
-                <img src="images/map_03.jpg" alt="">
-            </div>
-        </div>
-        <div class="admin">
-            <div class="admin-top">
-                <span>管理员入口</span>
-            </div>
-            <div class="admin-bot">
-                <div class="admin-bot-l">
-                    <img src="images/administrator1.png" alt="" class="admin-img">
-                    <img src="images/administrator2.png" alt="" class="admin-img">
-                </div>
 
-                <div class="admin-bot-r">
-                    <a href="#">仪器管理单位</a>
-                    <a href="#">平台管理员</a>
-                </div>
-
-            </div>
+        <div class="find_ins_btn">
+            <a class="ins_hot" href="#">热门</a>
+            <a class="ins_new" href="#">最新</a>
         </div>
     </div>
 
+    <!--找需求-->
+    <div class="find_detect_bg">
+        <img src="images/img_index/32.png" alt="">
+        <div class="find_detect_con">
+            <h1>找需求</h1>
+            <h3>You need find17.com</h3>
+            <h2>极富创新性的O2O科研模式</h2>
+            <p>供需双方造就庞大交易平台，国家级合作联盟给力支撑，满足百万需求机构</p>
+        </div>
+    </div>
+    <div class="demand">
+        <div class="demand_box">
+            <div id="demand_lbtn"></div>
+            <div class="demand_box_cen">
+                <div class="demand_lang_box">
+                    <div class="demand1">
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>量子点 检测果蔬农药残留 工艺开发</h5>
+                                <h6>303 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>量子点 检测果蔬农药残留 工艺开发</h5>
+                                <h6>303 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>量子点 检测果蔬农药残留 工艺开发</h5>
+                                <h6>303 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="demand1">
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>检测果蔬农药残留 工艺开发</h5>
+                                <h6>404 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>检测果蔬农药残留 工艺开发</h5>
+                                <h6>404 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5>检测果蔬农药残留 工艺开发</h5>
+                                <h6>404 <span>次查看</span></h6>
+                                <p>发布于2016年11月1日</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="demand1">
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5> 工艺开发 量子点 检测果蔬农药残留</h5>
+                                <h6>505 <span>次查看</span></h6>
+                                <p>发布于2016年11月3日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5> 工艺开发 量子点 检测果蔬农药残留</h5>
+                                <h6>505 <span>次查看</span></h6>
+                                <p>发布于2016年11月3日</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="demand_con">
+                                <h5> 工艺开发 量子点 检测果蔬农药残留</h5>
+                                <h6>505 <span>次查看</span></h6>
+                                <p>发布于2016年11月3日</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="demand_rbtn"></div>
+        </div>
+
+        <div class="demand_btn">
+            <a href="#">发布需求</a>
+        </div>
+    </div>
+
+    <!--专家  机构-->
+    <div class="expert">
+        <img class="expert_img" src="images/img_index/35.png" alt="">
+        <div class="expert_con">
+            <div class="find_title">
+                <div style="overflow: hidden">
+                    <h1 class="expert_tit">专家，其实就在你身边</h1>
+                </div>
+                <p>让您在科学研究中遇到的难题<br>
+                    得到及时、高效、周到的解决方案 </p>
+            </div>
+
+            <div class="expert_infor">
+                <div class="expert_left">
+                    <div class="people">
+                        <img src="images/img_index/people.png" alt="">
+                        <div>
+                            <h1>王晓东</h1>
+                            <h3>美国国家科学院院士</h3>
+                            <p>研究领域 : 分子生物学研究</p>
+                        </div>
+                    </div>
+                    <div class="people people2">
+                        <img src="images/img_index/people.png" alt="">
+                        <div>
+                            <h1>王晓东</h1>
+                            <h3>美国国家科学院院士</h3>
+                            <p>研究领域 : 分子生物学研究</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert_left expert_right">
+                    <div class="people people_r">
+                        <img src="images/img_index/people.png" alt="">
+                        <div>
+                            <h1>王晓东</h1>
+                            <h3>美国国家科学院院士</h3>
+                            <p>研究领域 : 分子生物学研究</p>
+                        </div>
+                    </div>
+                    <div class="people people2 people_r">
+                        <img src="images/img_index/people.png" alt="">
+                        <div>
+                            <h1>王晓东</h1>
+                            <h3>美国国家科学院院士</h3>
+                            <p>研究领域 : 分子生物学研究</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agency">
+        <div class="agency_tit">
+            <h1>来自不同领域的服务机构</h1>
+        </div>
+        <div class="find_title agency_title">
+            <div style="overflow: hidden">
+                <h1 class="expert_tit">权威服务机构，覆盖无数领域</h1>
+            </div>
+            <p>每一家服务机构均经过认证把关、层层筛选<br>
+                这里是权威性的最高认证，确保科研项目安全交易 </p>
+        </div>
+
+        <div class="agency_con"></div>
+        <div class="agency_btn">
+            <a href="#">期待您的加入</a>
+        </div>
+    </div>
 
 </div>
 
 <div class="footer">
-    <div class="foot-top">
-        <div class="foot-top-center">
-            <div class="link">
-                <span>友情链接</span>
-            </div>
-            <div class="friend">
-                <a href="#">中华人民共和国科技部</a>
-                <a href="#">国家科技基础条件平台中心</a>
-                <a href="#">中华科技共享网</a>
-                <a href="#">科研设施与仪器国家网络管理平台</a>
-                <a href="#">江西省科学技术厅</a>
-                <a href="#">江西省分析测试研究所</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="foot-bot">
-        <div class="foot-bot-center">
-            <div>
-                <span>主办单位 : 江西省科学技术厅</span>
-                <span>赣ICP备14001343号-1</span>
-                <span>技术支持 : 北京国科知源科技有限公司</span>
-            </div>
-            <span class="visitors">您是本站第【<b>9999</b>】位访问者</span>
-        </div>
+    <div class="foot_cen">
+        <img src="images/img_index/333.png" alt="">
+        <p>
+            <a href="#">招商加盟</a>
+            <a href="#">合作单位</a>
+            <a href="#">关于我们</a>
+            <a href="#">人才招聘</a>
+        </p>
+        <ul>
+            <li>copyright 2016</li>
+            <li>北京国科知源科技有限公司</li>
+            <li>All rights reserved.</li>
+            <li>京IPC备 163034614号</li>
+        </ul>
     </div>
 </div>
-<script src="js/number.js"></script>
+
 <script src="js/index.js"></script>
 </body>
 </html>

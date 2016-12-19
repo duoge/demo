@@ -1,0 +1,65 @@
+.reg_nav .d3 {
+    background: url("../images/5566.png") no-repeat;
+    width: 368px;
+    position: relative;
+    z-index: 9;
+    left: -16px;
+    color: white;
+}
+
+.reg_nav .d1,
+.reg_nav .d2 {
+    background: url("../images/7.png") no-repeat -9px;
+    color: black;
+}
+
+.reg_success {
+    padding-bottom: 60px;
+}
+
+.reg_success h1 {
+    height: 46px;
+    line-height: 46px;
+    color: #56ae24;
+    font-size: 24px;
+    font-weight: normal;
+    padding-left: 70px;
+    margin-top: 60px;
+    margin-left: 170px;
+    background: url("../images/99.png") no-repeat;
+}
+
+.reg_success p {
+    font-size: 16px;
+    margin-left: 240px;
+}
+
+.success_s {
+    display: block;
+    margin-left: 240px;
+    margin-top: 35px;
+}
+
+.success_d {
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.success_d a {
+    float: left;
+    height: 47px;
+    width: 176px;
+    background-color: #ff952d;
+    color: white;
+    text-align: center;
+    line-height: 47px;
+    font-size: 17px;
+}
+
+.success_d a:hover {
+    background-color: #fa810b;
+}
+
+.btn_data {
+    margin-left: 52px;
+}

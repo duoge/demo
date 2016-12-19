@@ -1,0 +1,32 @@
+.service_container {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.ser_center h1 {
+    text-align: center;
+    margin-top: 54px;
+}
+
+.ser_center h2 {
+    margin-top: 20px;
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+
+.ser_center h3 {
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.ser_center {
+    width: 988px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ser_center p b, .ser_center p span {
+    font-size: 14px;
+    line-height: 28px;
+}

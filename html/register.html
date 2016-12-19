@@ -2,139 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>注册</title>
+    <title>用户注册</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/register.css">
-    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../tools/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/jquery.js"></script>
 </head>
 <body>
-<div id="header">
-    <div class="header-top">
-        <div class="header-top-cen">
-            <div class="welcome">
-                <span>您好！欢迎来到 &nbsp;</span>
-            </div>
-
-            <div class="login-reg">
-                <a href="login.html" class="login">【 登录 】</a>
-                <a href="register.html" class="register">【 注册 】</a>
-                <a href="#" class="callus">联系我们</a>
-            </div>
-        </div>
+<div class="header">
+    <div class="head_cen">
+        <span>【北京】 您好，找仪网欢迎您</span>
+        <a href="#" class="head_rig">【 我是供方 】</a>
+        <a href="#" class="head_rig">【 我是需方 】</a>
     </div>
-
-    <div class="logo-input">
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
-        </div>
-        <div class="province">
-            <h2> 江西省大型科研仪器网络管理平台</h2>
-        </div>
-        <div class="search">
-            <div class="search-top">
-                <select name="select" id="select">
-                    <option>全部</option>
-                    <option>全部1</option>
-                    <option>全部2</option>
-                </select>
-                <input type="text" placeholder="请输入您要搜索的关键字">
-                <button id="search-btn">搜 索</button>
-            </div>
-            <div class="hotkeywords">
-                <span>热门关键词：</span>
-
-            </div>
-        </div>
-    </div>
-
 </div>
 
-<div class="reg-container">
-    <h3>用户注册</h3>
-    <div class="reg-con">
-        <div class="inp-container">
-            <span>真实姓名</span>
-            <label>
-                <input type="text" id="rel-name" class="reg-inp" required="required">
-            </label>
-            <b> * 请输入真实姓名</b>
+<div class="content">
+    <div class="content_c">
+        <div class="content_top">
+            <div class="reg_logo">
+                <a href="#"><img src="../images/logo.png" alt=""></a>
+            </div>
+            <div class="reg_logo_tex">
+                <a href="#">返回首页</a>
+                <span>|</span>
+                <a href="#">帮助中心</a>
+            </div>
         </div>
-        <div class="inp-container">
-            <span>用户昵称</span>
-            <label>
-                <input type="text" id="nickname" class="reg-inp" required="required">
-            </label>
-            <b> * 请输入用户昵称</b>
+        <div class="reg_nav">
+            <div class="reg_nav_d d1 reg_nav_d_c">
+                <span>1. 填写账号资料</span>
+            </div>
+            <div class="reg_nav_d d2">
+                <span>2. 激活账号</span>
+            </div>
+            <div class="reg_nav_d d3">
+                <span>3. 注册成功</span>
+            </div>
         </div>
-        <div class="inp-container">
-            <span><i>密码</i>密码</span>
-            <label>
-                <input type="password" id="password" class="reg-inp" required="required">
-            </label>
-            <b> * 请输入密码</b>
-        </div>
-        <div class="inp-container">
-            <span>确认密码</span>
-            <label>
-                <input type="password" id="confirm-pwd" class="reg-inp" required="required">
-            </label>
-            <b> * 请再次输入密码</b>
-        </div>
-        <div class="inp-container">
-            <span>联系电话</span>
-            <label>
-                <input type="tel" id="phone" class="reg-inp" required="required">
-            </label>
-            <b> * 请输入您的联系电话</b>
-        </div>
-        <div class="inp-container">
-            <span><i>邮箱</i>邮箱</span>
-            <label>
-                <input type="email" id="email" class="reg-inp" required="required">
-            </label>
-            <b> * 请输入您常用的邮箱地址</b>
-        </div>
-        <div class="inp-container">
-            <span>所在单位</span>
-            <select>
-                <option>请选择</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
-            <b> * 必填！请选择单位类型</b>
-        </div>
-        <div class="inp-container">
-            <span><i>职称</i>职称</span>
-            <select>
-                <option>请选择</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
-            <b> * 必填！请选择您的职称</b>
+        <div class="reg_container">
+            <div class="reg_identity">
+                <span class="reg_identity_span">选择身份 : </span>
+                <b class="reg_identity_b reg_ide_bg">个人</b>
+                <b class="reg_identity_b">机构</b>
+            </div>
+
+            <!--个人注册-->
+            <div class="reg_ide_con display ">
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="user_name" placeholder="请输入用户名" required="required">
+                    </label>
+                    <span class="user_point">3-15个中、英文、数字及"-"符号</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="user_email" placeholder="请输入常用邮箱" required="required">
+                    </label>
+                    <span class="user_point">邮箱将作为验证及找回密码时使用</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="password" id="user_psw" placeholder="请输入密码" required="required">
+                    </label>
+                    <span class="user_point">6-20个大小写英文字母、数字或符号</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="password" id="user_psw2" placeholder="请再次输入密码" required="required">
+                    </label>
+                    <span class="user_point">6-20个大小写英文字母、数字或符号</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="user_code" placeholder="请输入验证码" style="float: left;" required="required">
+                    </label>
+                    <div class="verification"></div>
+                    <span class="user_point"></span>
+                </div>
+
+                <div class="agree_service">
+                    <input type="checkbox" id="check" checked="checked">
+                    <label for="check">我同意</label>
+                    <a href="services.html">《找仪网用户注册协议》</a>
+                </div>
+                <div class="reg_btn">
+                    <a href="#">免费注册</a>
+                </div>
+                <div class="reg_login">
+                    <a href="#">立即登录</a><span>已有账户？</span>
+                </div>
+            </div>
+            <!--机构注册-->
+            <div class="reg_ide_con ">
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="agency_name" placeholder="请输入组织机构名称" required="required">
+                    </label>
+                    <span class="user_point"></span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="agency_email" placeholder="请输入常用邮箱" required="required">
+                    </label>
+                    <span class="user_point">邮箱将作为验证及找回密码时使用</span>
+                </div>
+
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="agency_num" placeholder="请输入注册号/统一社会信用代码" required="required">
+                    </label>
+                    <span class="user_point">如果没有注册号/统一社会信用代码，请输入组织机构代码</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="password" id="agency_psw" placeholder="请输入密码" required="required">
+                    </label>
+                    <span class="user_point">6-20个大小写英文字母、数字或符号</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="password" id="agency_psw2" placeholder="请再次输入密码" required="required">
+                    </label>
+                    <span class="user_point">6-20个大小写英文字母、数字或符号</span>
+                </div>
+
+                <div class="reg_inp">
+                    <label>
+                        <input type="text" id="agency_code" placeholder="请输入验证码" style="float: left;"
+                               required="required">
+                    </label>
+                    <div class="verification"></div>
+                    <span class="user_point"></span>
+                </div>
+
+                <div class="agree_service">
+                    <input type="checkbox" id="check2" checked="checked">
+                    <label for="check2">我同意</label>
+                    <a href="services.html">《找仪网用户注册协议》</a>
+                </div>
+                <div class="reg_btn">
+                    <a href="#">免费注册</a>
+                </div>
+                <div class="reg_login">
+                    <a href="#">立即登录</a><span>已有账户？</span>
+                </div>
+
+            </div>
         </div>
 
-        <input type="reset" id="reset-btn" value="重置">
-        <input type="submit" id="submit-btn" value="提交">
     </div>
-
-
 </div>
-
 
 <div class="footer">
-    <div class="foot-bot">
-        <div class="foot-bot-center" style="margin-top: 30px">
-            <div>
-                <span>主办单位 : 江西省科学技术厅</span>
-                <span>赣ICP备14001343号-1</span>
-                <span>技术支持 : 北京国科知源科技有限公司</span>
-            </div>
-            <span class="visitors">您是本站第【<b>9999</b>】位访问者</span>
-        </div>
+    <div class="foot_cen">
+        <p>
+            <a href="#">招商加盟</a>
+            <a href="#">合作单位</a>
+            <a href="#">关于我们</a>
+            <a href="#">人才招聘</a>
+        </p>
+        <ul>
+            <li>copyright 2016</li>
+            <li>北京国科知源科技有限公司</li>
+            <li>All rights reserved.</li>
+            <li>京IPC备 163034614号</li>
+        </ul>
+
     </div>
 </div>
+<script src="../js/register.js"></script>
 </body>
 </html>

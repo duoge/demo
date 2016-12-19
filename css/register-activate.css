@@ -1,0 +1,62 @@
+.reg_nav .d2 {
+    background: url("../images/5566.png") no-repeat;
+    width: 368px;
+    position: relative;
+    z-index: 9;
+    left: -16px;
+    color: white;
+}
+
+.reg_nav .d1,
+.reg_nav .d3 {
+    background: url("../images/7.png") no-repeat -9px;
+}
+
+.reg_nav .d3 {
+    margin-left: -16px;
+}
+
+.reg_active {
+    padding-bottom: 82px;
+}
+
+.reg_active p {
+    font-size: 16px;
+    margin-left: 125px;
+    margin-top: 50px;
+}
+
+.reg_active p b {
+    color: #ff962d;;
+}
+
+.reg_active div {
+    font-size: 16px;
+    margin-left: 125px;
+    margin-top: 30px;
+}
+
+#email {
+    height: 40px;
+    width: 300px;
+    padding-left: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff942a;
+    background-color: #f5f5f5;
+    border: 1px solid #ff9d50;
+}
+
+#activation {
+    width: 240px;
+    height: 48px;
+    background-color: #ff952d;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    margin-left: 290px;
+    margin-top: 69px;
+    border-radius: 3px;
+}
